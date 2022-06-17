@@ -5,19 +5,19 @@ int main (){
   int n;
   double sum=0;
   double percent;
-  double gpa[100];
+  double ctwgp[100];
   double mean;
  
-  cout<< "Enter number of semesters: "; 
+  cout<< "Input cumulated total credit: "; 
   cin >> n; 
-  cout<<"Input consecutive gpa's: "; 
+  cout<<"Input cummulated total weighted grade point: "; 
 
   for(int i=0; i<n; i++){
-    cin>>gpa[i];
+    cin>>ctwgp[i];
   }
       
   for(int i=0; i<n; i++){
-    sum+=gpa[i]; 
+    sum+=ctwgp[i]; 
   }
   
   mean=sum/n; 
