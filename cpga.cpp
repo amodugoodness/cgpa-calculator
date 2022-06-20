@@ -12,6 +12,7 @@ string* splitCourseDetails(string courseDetails) {
   int splitCounter = 0;
   string tmp = "";
 
+  // loop through each character in the string
   for (int i=0; i<courseDetails.length(); i++){
     if (courseDetails[i] == ' '){ 
       // ensures that previous strings of characters are stored when a space is encountered
@@ -34,6 +35,7 @@ string* splitCourseDetails(string courseDetails) {
 }
 
 int convertScoreToPoints(int score){
+  // all score values will have to be between 0 and 100 to get an accurate grade
   if (score >= 70 && score <= 100){
     // Grade A
     return 5;
